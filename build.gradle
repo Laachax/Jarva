@@ -1,0 +1,25 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '1.2.4'
+}
+
+
+mainClassName = 'jarvaBot.jarvaBotMain'
+
+version '1.0'
+def jdaVersion = '3.3.1_297'
+
+sourceCompatibility = 1.8
+
+
+
+dependencies {
+    compile "net.dv8tion:JDA:$jdaVersion"
+}
+
+repositories {
+    jcenter()
+}
+
+compileJava.options.encoding = 'UTF-8'
